@@ -1,29 +1,30 @@
 /**
  * Um teatro possui 600 lugares dispostos em 15 fileiras com 40 poltronas cada.
 
-Deseja-se um sistema de controle de ocupação que ofereça as seguintes opções, através de um seletor:
+Deseja-se um sistema de controle de ocupaÃ§Ã£o que ofereÃ§a as seguintes opÃ§Ãµes, atravÃ©s de um seletor:
 
 0.	Finalizar
 1.	Reservar poltrona
-2.	Mapa de ocupação
+2.	Mapa de ocupaÃ§Ã£o
 3.	Faturamento
-A opção 1 deverá solicitar a informação da fileira e da poltrona. Os dados devem ser consistidos no sentido da garantia de serem válidos. Caso o lugar esteja vago, efetuar a reserva e informar o usuário do sucesso da operação. Caso o lugar já se encontre ocupado, alertar o usuário com uma mensagem.
+A opÃ§Ã£o 1 deverÃ¡ solicitar a informaÃ§Ã£o da fileira e da poltrona. Os dados devem ser consistidos no sentido da garantia de serem vÃ¡lidos. Caso o lugar esteja vago, efetuar a reserva e informar o usuÃ¡rio do sucesso da operaÃ§Ã£o. Caso o lugar jÃ¡ se encontre ocupado, alertar o usuÃ¡rio com uma mensagem.
 
-A opção 2 deverá gerar na tela um “mapa” de ocupação do teatro com uma legenda onde:
+A opÃ§Ã£o 2 deverÃ¡ gerar na tela um â€œmapaâ€ de ocupaÃ§Ã£o do teatro com uma legenda onde:
 
-‘.’ representa lugar vago
-‘#’ representa lugar ocupado
-A opção 3 deverá apresentar na tela as seguintes informações:
+â€˜.â€™ representa lugar vago
+â€˜#â€™ representa lugar ocupado
+A opÃ§Ã£o 3 deverÃ¡ apresentar na tela as seguintes informaÃ§Ãµes:
 
 Qtde de lugares ocupados: 	999
 Valor da bilheteria: 		R$ 9999,99
 Sabendo-se que:
 
-•	Fileiras 1 a 5:		R$ 50,00
-•	Fileiras 6 a 10:	R$ 30,00
-•	Fileiras 11 a 15:	R$ 15,00
+â€¢	Fileiras 1 a 5:		R$ 50,00
+â€¢	Fileiras 6 a 10:	R$ 30,00
+â€¢	Fileiras 11 a 15:	R$ 15,00
 
- 
+	Autor: Atilio Almeida Costa
+	ADS: 371
  */
 
 #include <iostream>
@@ -78,7 +79,7 @@ void mostra_poltrona(int **p, int linha, int coluna)
 				cout<<"Poltrona reservda com sucesso";
 			}else{
 			cout << setw(2) << "Poltrona ocupada"; 
-			cout<<"A poltrona não pode ser reservada";
+			cout<<"A poltrona nÃ£o pode ser reservada";
 			}
 		cout << endl;
 }
@@ -122,7 +123,7 @@ int main(int argc, char** argv)
 	{
 		cout<<"Bem vindo" << endl;
 		cout<<"Digite seu interesse:" << endl;
-		cout<<"0.	Finalizar" << endl <<"1.	Reservar poltrona" << endl <<"2.	Mapa de ocupação" << endl <<"3.	Faturamento"<< endl;
+		cout<<"0.	Finalizar" << endl <<"1.	Reservar poltrona" << endl <<"2.	Mapa de ocupaÃ§Ã£o" << endl <<"3.	Faturamento"<< endl;
 		cin >> seletor;
 		cout<<"Se interesse foi: "<<seletor<< endl;
 		
